@@ -28,6 +28,7 @@ function game() {
     const playerSelection = prompt(
       "Enter your choice: rock, paper, or scissors"
     );
+    document.querySelector('.jsinput').innerHTML=playerSelection;
     const computerSelection = getComputerChoice();
 
     console.log(playRound(playerSelection, computerSelection));
